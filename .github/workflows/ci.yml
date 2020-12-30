@@ -14,7 +14,6 @@ jobs:
       run: npm install && npm run build
 
     - name: Deploy
-      uses: peaceiris/actions-master@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
